@@ -19,5 +19,16 @@ end
 DataMapper.auto_migrate!
 
 get '/' do
-  'Hello, world.'
+  slim :index
 end
+
+__END__
+
+@@ layout
+doctype 5
+html
+  head
+    meta charset='utf-8'
+    title = @title
+  body
+    == yield
