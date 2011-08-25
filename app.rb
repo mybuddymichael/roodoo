@@ -20,6 +20,7 @@ class Task
 end
 
 configure :development do
+  require 'dm-sqlite-adapter'
   DataMapper.auto_migrate!
 end
 
