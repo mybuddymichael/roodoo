@@ -39,3 +39,6 @@ html
     title = @title
   body
     == yield
+
+@@ index
+p Hello.
