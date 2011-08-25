@@ -1,6 +1,7 @@
 require 'sinatra'
 require 'slim'
 require 'data_mapper'
+require 'dm-postgres-adapter'
 
 configure do
   Slim::Engine.set_default_options :pretty => true
