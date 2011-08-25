@@ -1,5 +1,6 @@
 source :rubygems
 
+gem 'dm-postgres-adapter', '~> 1.1.0'
 gem 'dm-sqlite-adapter', '~> 1.1.0'
 gem 'data_mapper', '~> 1.1.0'
 gem 'sinatra', '~> 1.2.6'
