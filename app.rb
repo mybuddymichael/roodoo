@@ -3,9 +3,11 @@ require 'slim'
 require 'data_mapper'
 
 Slim::Engine.set_default_options :pretty => true
+configure do
 
-DataMapper.setup(:default,
-              "sqlite://#{File.expand_path(File.dirname(__FILE__))}/db/tdrb.db")
+  pwd = File.expand_path(File.dirname(__FILE__))
+  DataMapper.setup(:default, ENV['DATABASE_URL'] || "sqlite://#{pwd}/db/tdrb.db")
+end
 
 class Task
   include DataMapper::Resource
