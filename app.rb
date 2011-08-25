@@ -2,8 +2,8 @@ require 'sinatra'
 require 'slim'
 require 'data_mapper'
 
-Slim::Engine.set_default_options :pretty => true
 configure do
+  Slim::Engine.set_default_options :pretty => true
 
   pwd = File.expand_path(File.dirname(__FILE__))
   DataMapper.setup(:default, ENV['DATABASE_URL'] || "sqlite://#{pwd}/db/tdrb.db")
