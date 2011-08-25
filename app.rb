@@ -3,6 +3,10 @@ require 'slim'
 require 'data_mapper'
 require 'dm-postgres-adapter'
 
+configure :development do
+  require 'dm-sqlite-adapter'
+end
+
 configure do
   Slim::Engine.set_default_options :pretty => true
 
@@ -22,7 +26,6 @@ class Task
 end
 
 configure :development do
-  require 'dm-sqlite-adapter'
   DataMapper.auto_migrate!
 end
 
