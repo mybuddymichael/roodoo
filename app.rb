@@ -19,7 +19,9 @@ class Task
 
 end
 
-DataMapper.auto_migrate!
+configure :development do
+  DataMapper.auto_migrate!
+end
 
 get '/' do
   slim :index
