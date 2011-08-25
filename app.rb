@@ -12,10 +12,9 @@ end
 class Task
   include DataMapper::Resource
 
-  property :id,         Serial
-  property :body,       Text
-  property :created_at, DateTime
-  property :tags,       CommaSeparatedList
+  property :id,   Serial
+  property :body, Text,    required: true
+  property :done, Boolean, default:  false
 end
 
 DataMapper.auto_migrate!
