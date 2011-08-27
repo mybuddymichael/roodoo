@@ -18,6 +18,8 @@ configure do
 
   DataMapper.setup(:default,
                    ENV['DATABASE_URL'] || "sqlite://#{DB_DIR}/tdrb.db")
+
+  DataMapper.auto_upgrade!
 end
 
 class Task
@@ -28,10 +30,6 @@ class Task
   property :body, Text,    required: true
   property :done, Boolean, default:  false
 
-end
-
-configure :development do
-  DataMapper.auto_upgrade!
 end
 
 get '/' do
