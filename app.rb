@@ -35,6 +35,7 @@ configure :development do
 end
 
 get '/' do
+  @tasks = Task.all
   slim :index
 end
 
