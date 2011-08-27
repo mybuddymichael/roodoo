@@ -44,7 +44,7 @@ get '/new' do
 end
 
 post '/create' do
-  @task = Task.create(params[:task])
+  Task.create(params[:task])
   redirect('/')
 end
 
