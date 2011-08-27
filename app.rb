@@ -56,6 +56,18 @@ html
   head
     meta(charset='utf-8')
     title = @title
+    css:
+      body {
+        font: 20px "Myriad Pro"; }
+      input {
+        outline: none;
+        border: none;
+        background: #ccc;
+        font: 20px "Myriad Pro";
+        padding: 2px; }
+      input:focus {
+        outline: none; }
+
   body
     == yield
 
