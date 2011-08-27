@@ -2,6 +2,7 @@ require 'sinatra'
 require 'slim'
 require 'data_mapper'
 require 'dm-postgres-adapter'
+require 'pathname'
 
 configure :development do
   require 'dm-sqlite-adapter'
@@ -10,9 +11,9 @@ end
 configure do
   set :slim, pretty: true
 
-  pwd = File.expand_path(File.dirname(__FILE__))
+  APP_ROOT = Pathname.new(__FILE__).expand_path.dirname
   DataMapper.setup(:default,
-                   ENV['DATABASE_URL'] || "sqlite://#{pwd}/db/tdrb.db")
+                   ENV['DATABASE_URL'] || "sqlite://#{APP_ROOT}/db/tdrb.db")
 end
 
 class Task
