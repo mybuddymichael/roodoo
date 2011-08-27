@@ -8,7 +8,7 @@ configure :development do
 end
 
 configure do
-  Slim::Engine.set_default_options(pretty: true)
+  set :slim, pretty: true
 
   pwd = File.expand_path(File.dirname(__FILE__))
   DataMapper.setup(:default,
