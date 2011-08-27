@@ -80,6 +80,8 @@ ul
   - @tasks.each do |task|
     li = task.body
 
+a href='/new' New
+
 @@ new
 h3 New task
 form(action='/create' method='post' id='task')
