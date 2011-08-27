@@ -59,3 +59,11 @@ html
 
 @@ index
 p Hello.
+
+@@ new
+h3 New task
+form(action='/create' method='post' id='task')
+  label(for='body') body:
+  input(type='text' name='task[body]' id='body' value='description')
+
+  input(type='submit')
