@@ -34,6 +34,13 @@ get '/' do
   slim :index
 end
 
+get '/new' do
+  slim :new
+end
+
+post '/create' do
+end
+
 __END__
 
 @@ layout
