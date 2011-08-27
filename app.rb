@@ -12,8 +12,11 @@ configure do
   set :slim, pretty: true
 
   APP_ROOT = Pathname.new(__FILE__).expand_path.dirname
+
+  DB_DIR = APP_ROOT + 'db'
+  DB_DIR.mkpath
   DataMapper.setup(:default,
-                   ENV['DATABASE_URL'] || "sqlite://#{APP_ROOT}/db/tdrb.db")
+                   ENV['DATABASE_URL'] || "sqlite://#{DB_DIR}/tdrb.db")
 end
 
 class Task
