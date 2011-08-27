@@ -1,5 +1,6 @@
 require 'sinatra'
 require 'slim'
+require 'sass'
 require 'data_mapper'
 require 'dm-postgres-adapter'
 require 'pathname'
@@ -60,17 +61,17 @@ html
   head
     meta(charset='utf-8')
     title = @title
-    css:
-      body {
-        font: 20px "Myriad Pro"; }
-      input {
-        outline: none;
-        border: none;
-        background: #ccc;
-        font: 20px "Myriad Pro";
-        padding: 2px; }
-      input:focus {
-        outline: none; }
+    sass:
+      body
+        font: 20px "Myriad Pro"
+      input
+        outline: none
+        border: none
+        background: #ccc
+        font: 20px "Myriad Pro"
+        padding: 2px
+      input:focus
+        outline: none
 
   body
     == yield
