@@ -15,6 +15,7 @@ configure do
 
   DB_DIR = APP_ROOT + 'db'
   DB_DIR.mkpath
+
   DataMapper.setup(:default,
                    ENV['DATABASE_URL'] || "sqlite://#{DB_DIR}/tdrb.db")
 end
