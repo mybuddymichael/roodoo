@@ -48,6 +48,10 @@ post '/create' do
   redirect('/')
 end
 
+get '*' do
+  redirect('/')
+end
+
 __END__
 
 @@ layout
