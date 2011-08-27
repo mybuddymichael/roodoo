@@ -58,7 +58,9 @@ html
     == yield
 
 @@ index
-p Hello.
+ul
+  - @tasks.each do |task|
+    li = task.body
 
 @@ new
 h3 New task
