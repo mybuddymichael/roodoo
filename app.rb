@@ -31,7 +31,7 @@ class Task
 end
 
 configure :development do
-  DataMapper.auto_migrate!
+  DataMapper.auto_upgrade!
 end
 
 get '/' do
