@@ -79,7 +79,9 @@ html
 @@ index
 ul
   - @tasks.each do |task|
-    li = task.body
+    li
+      = task.body + ' '
+      a href="/delete/#{task.id}" delete
 
 a href='/new' New
 
