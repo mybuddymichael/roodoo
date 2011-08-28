@@ -49,6 +49,11 @@ post '/create' do
   redirect('/')
 end
 
+get '/delete/:id' do
+  Task.get(params[:id]).destroy
+  redirect('/')
+end
+
 get '*' do
   redirect('/')
 end
