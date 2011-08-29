@@ -37,7 +37,7 @@ end
 
 get '/' do
   @tasks = Task.all
-  slim :index
+  slim :list
 end
 
 get '/new' do
@@ -81,7 +81,7 @@ html
   body
     == yield
 
-@@ index
+@@ list
 ul
   - @tasks.each do |task|
     li
