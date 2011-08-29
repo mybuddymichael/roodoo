@@ -15,9 +15,6 @@ advantages:
   to-do app.
 - You can **access it anywhere**. Roodoo is a web-app, meaning you can read and
   edit your to-dos anywhere you have internet access.
-- Use it **natively**. Roodoo is optimized for iPhone native-like usage. Apple
-  provides awesome support for installed web apps, and roodoo takes full
-  advantage.
 
 ## Installation
 
