@@ -10,8 +10,7 @@ webapp.
 Compared to a native solution like Things or Omnifocus, **roodoo** has several
 advantages:
 
-- It's **free as in beer**. Roodoo is can be run using a _free_ [Heroku]
-  instance.
+- It's **free as in beer**. Roodoo can be run using a _free_ [Heroku] instance.
 - It's **free as in speech**. Fork it, optimize it, laugh at it. Make it your
   to-do app.
 - You can **access it anywhere**. Roodoo is a web-app, meaning you can read and
