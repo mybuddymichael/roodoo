@@ -1,9 +1,9 @@
 roodoo
 ======
 
-**Roodoo** is a free to-do list [Ruby] app, built to run on a free [Heroku]
-account. Roodoo can be run in a browser, or as a homescreen-optimized mobile
-webapp.
+**Roodoo** is a free to-do list app, built using [Ruby] and [Sinatra], designed
+to be run with a free [Heroku] account, for easy access anywhere and on any
+device.
 
 ## Benefits
 
@@ -51,4 +51,5 @@ THE SOFTWARE.
 
 
 [Ruby]: http://www.ruby-lang.org/en/
+[Sinatra]: http://www.sinatrarb.com/
 [Heroku]: http://www.heroku.com/
