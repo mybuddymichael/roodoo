@@ -24,7 +24,6 @@ advantages:
 Roodoo is currently under alpha development. Installation instructions will be
 provided at the appropriate time.
 
-
 ## License
 
 The MIT License
