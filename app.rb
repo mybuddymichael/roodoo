@@ -2,8 +2,11 @@ require 'sinatra'
 require 'slim'
 require 'sass'
 require 'data_mapper'
-require 'dm-postgres-adapter'
 require 'pathname'
+
+configure :production do
+  require 'dm-postgres-adapter'
+end
 
 configure :development do
   require 'dm-sqlite-adapter'
