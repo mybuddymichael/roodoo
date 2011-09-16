@@ -13,6 +13,9 @@ end
 
 group :development do
   gem 'shotgun', '~> 0.9'
-  gem 'foreman', '~> 0.19.0'
+  gem 'foreman', '~> 0.19'
   gem 'dm-sqlite-adapter', '~> 1.1.0'
+  gem 'guard', '~> 0.6.3'
+  gem 'guard-livereload', '~> 0.3.1'
+  gem 'rb-fsevent', '~> 0.4.3'
 end
