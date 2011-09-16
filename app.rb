@@ -40,11 +40,7 @@ end
 
 get '/' do
   @tasks = Task.all
-  slim :list
-end
-
-get '/new' do
-  slim :new
+  slim :main
 end
 
 post '/create' do
@@ -84,19 +80,16 @@ html
   body
     == yield
 
-@@ list
-ul
-  - @tasks.each do |task|
-    li
-      = task.body + ' '
-      a href="/delete/#{task.id}" delete
-
-a href='/new' New
-
-@@ new
+@@ main
 h3 New task
 form(action='/create' method='post' id='task')
   label(for='body') body:
   input(type='text' name='task[body]' id='body' value='description')
 
   input(type='submit')
+
+ul
+  - @tasks.each do |task|
+    li
+      = task.body + ' '
+      a href="/delete/#{task.id}" delete
