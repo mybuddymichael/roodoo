@@ -126,6 +126,7 @@ html
         width: 480px;
         margin: 32px auto 32px auto;
         color: #333;
+        text-rendering: optimizeLegibility;
       }
 
       a, a:hover, a:active, a:visited {
