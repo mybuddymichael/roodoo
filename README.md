@@ -30,6 +30,8 @@ directory, like so:
     $ cd ~/.pow
     $ ln -s ~/Path/to/roodoo
 
+Then simply visit [http://roodoo.dev/]().
+
 ## License
 
 The MIT License
