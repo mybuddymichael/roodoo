@@ -115,6 +115,11 @@ html
         border-radius: @radius;
       }
 
+      // Variables
+      @base_gray: #ddd;
+      @base_blue: #198adb;
+      @base_red:  #dc322f;
+
       // Custom
       body {
         font: 32px Helvetica, Arial, sans-serif;
