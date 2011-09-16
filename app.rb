@@ -174,6 +174,10 @@ html
         padding-left: 8px;
         padding-right: 8px;
         background: #ddd;
+        border-top:    1px solid darken(@base_gray, 5%);
+        border-left:   1px solid darken(@base_gray, 8%);
+        border-right:  1px solid darken(@base_gray, 8%);
+        border-bottom: 1px solid darken(@base_gray, 18%);
         .border-radius;
         &::-webkit-input-placeholder { color: #888; }
         &:-moz-placeholder { color: #888; }
