@@ -1,6 +1,14 @@
 source :rubygems
 
-gem 'data_mapper', '~> 1.1.0'
+gem 'dm-core', '~> 1.1.0'
+gem 'dm-aggregates', '~> 1.1.0'
+gem 'dm-migrations', '~> 1.1.0'
+gem 'dm-timestamps', '~> 1.1.0'
+gem 'dm-validations', '~> 1.1.0'
+gem 'dm-types', '~> 1.1.0'
+gem 'dm-constraints', '~> 1.1.0'
+gem 'dm-serializer', '~> 1.1.0'
+gem 'dm-transactions', '~> 1.1.0'
 gem 'sinatra', '~> 1.2.6'
 gem 'thin', '~> 1.2.11'
 gem 'slim', '~> 1.0.1'
