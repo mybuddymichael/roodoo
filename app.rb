@@ -1,6 +1,6 @@
 require 'sinatra'
 require 'slim'
-require 'sass'
+require 'less'
 require 'data_mapper'
 require 'pathname'
 
@@ -65,18 +65,36 @@ html
   head
     meta(charset='utf-8')
     title = @title
-    sass:
-      body
-        font: 20px "Helvetica Neue"
-      input
-        outline: none
-        border: none
-        background: #ccc
-        font: inherit
-        padding: 2px
-      input:focus
-        outline: none
+    less:
+      body {
+        font: 32px Helvetica, Arial, sans-serif;
+        width: 480px;
+        margin: 32px auto 32px auto;
+        color: #333;
+      }
 
+      input {
+        outline: none;
+        border: none;
+        background: #ccc;
+        font: inherit;
+        padding: 2px;
+        &:focus { outline: none; }
+      }
+
+      h1 {
+        font-size: 48px;
+      }
+
+      #submit {
+        background: transparent;
+      }
+
+      #task_input {
+        width: 480px;
+        height: 40px;
+        font-size: 32px;
+      }
   body
     == yield
 
