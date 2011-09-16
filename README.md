@@ -32,6 +32,9 @@ directory, like so:
 
 Then simply visit http://roodoo.dev/.
 
+(Automatic remote installation isn't finished yet, but if you're familiar with
+[Heroku], you can figure it out.)
+
 ## License
 
 The MIT License
