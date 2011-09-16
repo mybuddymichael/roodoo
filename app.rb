@@ -150,7 +150,8 @@ html
       }
 
       h1 {
-        font-size: 48px;
+        font-size: 64px;
+        font-weight: bold;
         margin-top: 32px;
         margin-bottom: 8px;
       }
