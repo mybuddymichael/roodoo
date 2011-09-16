@@ -183,6 +183,14 @@ html
         .border-radius;
         &::-webkit-input-placeholder { color: @placeholder_text; }
         &:-moz-placeholder { color: @placeholder_text; }
+
+        &:focus {
+          height: 46px;
+          border-top:    2px solid @base_blue;
+          border-left:   2px solid @base_blue;
+          border-right:  2px solid @base_blue;
+          border-bottom: 2px solid @base_blue;
+        }
       }
   body
     == yield
