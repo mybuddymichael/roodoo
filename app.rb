@@ -119,6 +119,7 @@ html
       @base_gray: #ddd;
       @base_blue: #198adb;
       @base_red:  #dc322f;
+      @placeholder_text: #8e8e8e;
 
       // Custom
       body {
@@ -179,8 +180,8 @@ html
         border-right:  1px solid darken(@base_gray, 8%);
         border-bottom: 1px solid darken(@base_gray, 18%);
         .border-radius;
-        &::-webkit-input-placeholder { color: #888; }
-        &:-moz-placeholder { color: #888; }
+        &::-webkit-input-placeholder { color: @placeholder_text; }
+        &:-moz-placeholder { color: @placeholder_text; }
       }
   body
     == yield
