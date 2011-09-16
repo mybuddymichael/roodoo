@@ -71,12 +71,12 @@ html
     title = @title
     sass:
       body
-        font: 20px "Myriad Pro"
+        font: 20px "Helvetica Neue"
       input
         outline: none
         border: none
         background: #ccc
-        font: 20px "Myriad Pro"
+        font: inherit
         padding: 2px
       input:focus
         outline: none
