@@ -122,7 +122,7 @@ html
 
       // Custom
       body {
-        font: 32px Helvetica, Arial, sans-serif;
+        font: 32px 'Helvetica Neue', Helvetica, Arial, sans-serif;
         width: 480px;
         margin: 32px auto 32px auto;
         color: #333;
