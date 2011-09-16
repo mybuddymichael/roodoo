@@ -108,6 +108,13 @@ html
         border-spacing: 0;
       }
 
+      // Mixins
+      .border-radius(@radius: 2px) {
+        -webkit-border-radius: @radius;
+        -moz-border-radius: @radius;
+        border-radius: @radius;
+      }
+
       // Custom
       body {
         font: 32px Helvetica, Arial, sans-serif;
@@ -146,6 +153,7 @@ html
         padding-left: 8px;
         padding-right: 8px;
         background: #ddd;
+        .border-radius;
         &::-webkit-input-placeholder { color: #888; }
         &:-moz-placeholder { color: #888; }
       }
