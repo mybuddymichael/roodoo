@@ -122,14 +122,19 @@ html
       input {
         outline: none;
         border: none;
-        background: #ccc;
         font: inherit;
-        padding: 2px;
+        padding: 0;
         &:focus { outline: none; }
       }
 
       h1 {
         font-size: 48px;
+        margin-top: 32px;
+        margin-bottom: 8px;
+      }
+
+      ul {
+        margin-top: 8px;
       }
 
       #submit {
@@ -137,20 +142,23 @@ html
       }
 
       #task_input {
-        width: 480px;
-        height: 40px;
+        width: 488px;
+        height: 48px;
         font-size: 32px;
+        margin-left: -8px;
+        padding-left: 8px;
+        background: #ddd;
+        &::-webkit-input-placeholder { color: #888; }
+        &:-moz-placeholder { color: #888; }
       }
   body
     == yield
 
 @@ main
-h3 New task
+h1 roodoo
 form(action='/create' method='post' id='task')
-  label(for='body') body:
-  input(type='text' name='task[body]' id='body' value='description')
-
-  input(type='submit')
+  input(type='text' name='task[body]' id='task_input'
+        placeholder='Name a task...' required)
 
 ul
   - @tasks.each do |task|
