@@ -189,4 +189,4 @@ ul
   - @tasks.each do |task|
     li
       = task.body + ' '
-      a href="/delete/#{task.id}" delete
+      a href="/delete/#{task.id}" class='delete' delete
