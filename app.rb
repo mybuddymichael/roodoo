@@ -1,8 +1,5 @@
-require 'sinatra'
-require 'slim'
-require 'less'
-require 'data_mapper'
-require 'pathname'
+require 'bundler/setup'
+Bundler.require(:default)
 
 configure :production do
   require 'dm-postgres-adapter'
