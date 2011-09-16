@@ -17,8 +17,18 @@ advantages:
 
 ## Installation
 
-Roodoo is currently under alpha development. Installation instructions will be
-provided at the appropriate time.
+    $ git clone git://github.com/mybuddymichael/roodoo.git
+    $ cd roodoo
+    $ bundle install --without production
+    $ bundle exec foreman start web
+
+Then go to [http://localhost:5000/] and try it out.
+
+**Roodoo** can also be run with [Pow] by simply linking it into your `~/.pow`
+directory, like so:
+
+    $ cd ~/.pow
+    $ ln -s ~/Path/to/roodoo
 
 ## License
 
@@ -48,3 +58,4 @@ THE SOFTWARE.
 [Ruby]: http://www.ruby-lang.org/en/
 [Sinatra]: http://www.sinatrarb.com/
 [Heroku]: http://www.heroku.com/
+[Pow]: http://pow.cx/
