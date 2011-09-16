@@ -188,6 +188,7 @@ html
 
         &:focus {
           height: 46px;
+          padding-left: 7px;
           border-top:    2px solid @base_blue;
           border-left:   2px solid @base_blue;
           border-right:  2px solid @base_blue;
