@@ -159,7 +159,7 @@ html
 h1 roodoo
 form(action='/create' method='post' id='task')
   input(type='text' name='task[body]' id='task_input'
-        placeholder='Name a task...' required)
+        placeholder='A task?' required)
 
 ul
   - @tasks.each do |task|
