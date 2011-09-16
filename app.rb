@@ -116,6 +116,7 @@ html
       }
 
       // Variables
+      @base_text: #333;
       @base_gray: #ddd;
       @base_blue: #198adb;
       @base_red:  #dc322f;
@@ -123,10 +124,10 @@ html
 
       // Custom
       body {
-        font: 32px 'Helvetica Neue', Helvetica, Arial, sans-serif;
         width: 480px;
+        font: 32px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        color: @base_text;
         margin: 32px auto 32px auto;
-        color: #333;
         text-rendering: optimizeLegibility;
       }
 
