@@ -142,11 +142,12 @@ html
       }
 
       #task_input {
-        width: 488px;
+        width: 480px;
         height: 48px;
         font-size: 32px;
         margin-left: -8px;
         padding-left: 8px;
+        padding-right: 8px;
         background: #ddd;
         &::-webkit-input-placeholder { color: #888; }
         &:-moz-placeholder { color: #888; }
