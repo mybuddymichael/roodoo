@@ -22,7 +22,7 @@ advantages:
     $ bundle install --without production
     $ bundle exec foreman start web
 
-Then go to [http://localhost:5000/]() and try it out.
+Then go to http://localhost:5000/ and try it out.
 
 **Roodoo** can also be run with [Pow] by simply linking it into your `~/.pow`
 directory, like so:
@@ -30,7 +30,7 @@ directory, like so:
     $ cd ~/.pow
     $ ln -s ~/Path/to/roodoo
 
-Then simply visit [http://roodoo.dev/]().
+Then simply visit http://roodoo.dev/.
 
 ## License
 
