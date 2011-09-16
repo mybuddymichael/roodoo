@@ -23,7 +23,6 @@ group :production do
 end
 
 group :development do
-  gem 'shotgun', '~> 0.9'
   gem 'foreman', '~> 0.19'
   gem 'dm-sqlite-adapter', '~> 1.1.0'
   gem 'guard', '~> 0.6.3'
