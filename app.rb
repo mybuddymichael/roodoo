@@ -168,6 +168,8 @@ html
         width: 480px;
         height: 48px;
         font-size: 32px;
+        color: @base_blue;
+        text-shadow: 1px 1px 0px lighten(@base_gray, 2%);
         margin-left: -8px;
         padding-left: 8px;
         padding-right: 8px;
