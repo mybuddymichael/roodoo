@@ -128,6 +128,18 @@ html
         color: #333;
       }
 
+      a, a:hover, a:active, a:visited {
+        color: @base_blue;
+      }
+
+      .delete, .delete:hover, .delete:visited {
+        color: @base_red;
+      }
+
+      .delete:active {
+        color: @base_blue;
+      }
+
       input {
         outline: none;
         border: none;
