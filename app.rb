@@ -153,15 +153,15 @@ html
         &:focus { outline: none; }
       }
 
-      h1 {
+      ul {
+        margin-top: 16px;
+      }
+
+      #roodoo {
         font-size: 64px;
         font-weight: bold;
         margin-top: 32px;
         margin-bottom: 8px;
-      }
-
-      ul {
-        margin-top: 16px;
       }
 
       #submit {
@@ -199,7 +199,7 @@ html
     == yield
 
 @@ main
-h1 roodoo
+h1#roodoo roodoo
 form(action='/create' method='post' id='task')
   input(type='text' name='task[body]' id='task_input'
         placeholder='A task?' required)
