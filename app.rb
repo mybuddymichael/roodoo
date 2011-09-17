@@ -177,7 +177,7 @@ html
         margin-left: -8px;
         padding-left: 8px;
         padding-right: 8px;
-        background: #ddd;
+        background: @base_gray;
         border-top:    1px solid darken(@base_gray, 5%);
         border-left:   1px solid darken(@base_gray, 8%);
         border-right:  1px solid darken(@base_gray, 8%);
