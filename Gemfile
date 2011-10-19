@@ -25,7 +25,7 @@ end
 group :development do
   gem 'dm-sqlite-adapter', '~> 1.1.0'
   gem 'foreman', '~> 0.19'
-  gem 'guard', '~> 0.6.3'
+  gem 'guard', '~> 0.8.7'
   gem 'guard-livereload', '~> 0.3.1'
   gem 'rb-fsevent', '~> 0.4.3'
 end
